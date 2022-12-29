@@ -1,0 +1,121 @@
+/* Constant color scheme */
+:root {
+  --var-color-primary: #1f62a7;
+  --var-color-hover: #28246c;
+  --var-color-secondary: #516a57;
+  --var-color-background: #282c34;
+  --var-color-background-hover: #282a2e;
+  --var-color-danger: #742e2e;
+  --var-color-danger-hover: #471e1e;
+
+  --var-color-text: white;
+}
+
+.App {
+  text-align: center;
+  padding: 1%;
+  /* Linear gradient */
+  background: linear-gradient(
+    45deg,
+    var(--var-color-primary),
+    var(--var-color-secondary)
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-logo {
+  /* height: 40vmin; */
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.btn-primary {
+  background-color: var(--var-color-primary) !important;
+  border-color: var(--var-color-primary) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--var-color-hover) !important;
+  border-color: var(--var-color-hover) !important;
+}
+
+.btn-secondary {
+  background-color: var(--var-color-secondary) !important;
+  border-color: var(--var-color-secondary) !important;
+}
+
+.btn-secondary:hover {
+  background-color: var(--var-color-hover) !important;
+  border-color: var(--var-color-hover) !important;
+}
+
+.btn-danger {
+  background-color: var(--var-color-danger) !important;
+  border-color: var(--var-color-danger) !important;
+}
+
+.btn-danger:hover {
+  background-color: var(--var-color-danger-hover) !important;
+  border-color: var(--var-color-danger-hover) !important;
+}
+
+.bg-dark {
+  background-color: var(--var-color-background) !important;
+}
+
+/* Make card expand slightly on hover */
+.card:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+}
+
+/* Buttons expand slightly on hover */
+.btn:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.App-header {
+  background-color: var(--var-color-background);
+  padding: 1%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: 18px;
+  color: white;
+}
+
+p {
+  font-size: 20px;
+  font-size: 1.7vmin !important;
+}
+
+h5 {
+  font-size: 20px;
+  font-size: 2vmin !important;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
